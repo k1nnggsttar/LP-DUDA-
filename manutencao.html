@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>A Chave do Êxito</title>
+<meta name="theme-color" content="#3B1517">
+<link rel="icon" type="image/png" sizes="32x32" href="icone-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&family=Jost:wght@400;500&display=swap">
+<style>
+/* Tela de manutenção: mesma identidade da LP, uma mensagem só. */
+:root{--plum:#3B1517;--wine:#7A3234;--cream:#F3EBE1;--gold:#C9A35E;--gold-hi:#E9D29C;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:grid;place-items:center;padding:32px 16px;background:radial-gradient(60% 55% at 50% 40%,var(--wine),var(--plum) 75%);color:var(--cream);font-family:"Jost","Segoe UI",system-ui,sans-serif;text-align:center}
+main{display:flex;flex-direction:column;align-items:center;gap:1.1rem;max-width:30rem}
+img{width:64px;height:auto;filter:drop-shadow(0 14px 18px rgba(0,0,0,.5));animation:sway 7s ease-in-out infinite;transform-origin:50% 20%}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){img{animation:none}}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;font-weight:500;color:var(--gold)}
+h1{margin:0;font-family:"Cormorant",Georgia,serif;font-weight:300;font-size:clamp(2.6rem,9vw,4.4rem);line-height:1.04}
+h1 em{display:block;color:var(--gold-hi)}
+.rule{width:56px;height:1px;background:var(--gold)}
+p{margin:0;color:rgba(243,235,225,.8)}
+.status{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi)}
+</style>
+<main>
+  <img src="chave.png" alt="" width="408" height="1100">
+  <span class="eyebrow">Site em manutenção</span>
+  <h1>A Chave <em>do Êxito</em></h1>
+  <div class="rule"></div>
+  <p class="status">Pagamento em haver</p>
+  <p>Esta página está temporariamente indisponível.</p>
+</main>
+</html>
