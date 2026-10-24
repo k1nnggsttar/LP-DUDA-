@@ -20,14 +20,13 @@
 <link rel="apple-touch-icon" href="icone-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;1,300&family=Jost:wght@400;500;600&display=swap">
 <style>
 /* Layout: alternância de faixas marsala profundo e creme, como amostras de tecido; dourado só em linhas, chave e chamadas. */
 :root{
   --plum:#3B1517;
   --marsala:#5E2427;
   --wine:#7A3234;
-  --taupe:#8C7B6B;
   --cream:#F3EBE1;
   --cream-2:#E8DCCD;
   --gold:#C9A35E;
@@ -70,8 +69,7 @@ p{margin:0}
 .hero h1 em{display:block;font-style:italic;color:var(--gold-hi)}
 .hero .lead{font-size:clamp(1.05rem,1.6vw,1.2rem);max-width:34rem;color:rgba(243,235,225,.85)}
 .lead-group{display:flex;flex-direction:column;gap:.9rem}
-.hero .lead-q{font-family:var(--display);font-size:clamp(1.4rem,2.4vw,1.8rem);line-height:1.25;color:var(--cream)}
-.hero .lead-quote{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.3;color:var(--gold-hi)}
+.hero .lead-q{font-family:var(--display);font-weight:500;font-size:clamp(1.4rem,2.4vw,1.8rem);line-height:1.25;color:var(--cream)}
 .manifesto-text{display:flex;flex-direction:column;align-items:center;gap:1rem}
 .manifesto-text strong{font-weight:500;color:var(--gold-hi)}
 .meta{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,225,.75)}
@@ -86,10 +84,8 @@ p{margin:0}
 .midas .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:start}
 .midas h2{font-size:clamp(2.4rem,5.5vw,4rem);color:var(--marsala)}
 .midas h2 em{color:var(--wine)}
-.midas .eyebrow{color:var(--wine);margin-bottom:1.2rem;display:block}
 .story{display:flex;flex-direction:column;gap:1.2rem;font-size:1.05rem;max-width:36rem;min-width:0}
 .story .drop::first-letter{font-family:var(--display);float:left;font-size:4.2em;line-height:.8;padding:.08em .12em 0 0;color:var(--marsala)}
-.pull{margin-top:.8rem;padding-top:1.4rem;border-top:1px solid var(--gold);font-family:var(--display);font-size:clamp(1.5rem,3vw,2rem);font-style:italic;line-height:1.25;color:var(--marsala)}
 
 /* VIVÊNCIA */
 .vivencia{--from:var(--cream);--to:var(--marsala);background:var(--marsala);padding-block:var(--gap)}
@@ -113,7 +109,7 @@ p{margin:0}
 /* MANIFESTO */
 .manifesto{--from:var(--marsala);--to:var(--plum);background:var(--plum);padding-block:var(--gap);text-align:center}
 .manifesto .wrap{display:flex;flex-direction:column;align-items:center;gap:1.6rem}
-.manifesto blockquote{margin:0;font-family:var(--display);font-size:clamp(2rem,5vw,3.6rem);line-height:1.12;max-width:52rem;text-wrap:balance}
+.manifesto blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(2rem,5vw,3.6rem);line-height:1.12;max-width:52rem;text-wrap:balance}
 .manifesto blockquote em{color:var(--gold-hi)}
 .manifesto p{max-width:36rem;color:rgba(243,235,225,.75)}
 .rule{width:64px;height:1px;background:var(--gold)}
@@ -131,10 +127,8 @@ p{margin:0}
 .host.duda{grid-column:1;grid-row:1;text-align:right;align-items:flex-end}
 .host.bia{grid-column:3;grid-row:1}
 .host .eyebrow{font-size:.66rem;letter-spacing:.22em;line-height:1.6}
-.portrait{aspect-ratio:3/4;max-width:100%;border-radius:60px 60px 4px 4px;background:linear-gradient(160deg,var(--wine),var(--plum));display:grid;place-items:center;font-family:var(--display);font-size:2.6rem;color:var(--gold-hi)}
 .host h3{font-size:2.2rem;color:var(--marsala)}
 .host p{font-size:.97rem;margin-top:.5rem}
-.todo{color:var(--taupe);font-style:italic}
 
 /* SERVIÇO */
 .info{--from:var(--cream-2);--to:var(--cream);background:var(--cream);color:var(--ink);padding-block:clamp(56px,8vw,96px) var(--gap)}
@@ -150,10 +144,9 @@ p{margin:0}
 /* CTA */
 .cta{--from:var(--cream);--to:var(--plum);background:radial-gradient(70% 80% at 50% 65%,var(--wine),var(--plum) 75%);padding-block:var(--gap) clamp(72px,11vw,130px);text-align:center}
 .cta .wrap{display:flex;flex-direction:column;align-items:center;gap:1.5rem}
-.cta h2{font-size:clamp(2.6rem,6.5vw,5rem);font-weight:400}
+.cta h2{font-size:clamp(2.6rem,6.5vw,5rem)}
 .cta h2 em{color:var(--gold-hi)}
 .cta p{max-width:32rem;color:rgba(243,235,225,.8)}
-.small{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,235,225,.55)}
 footer{background:var(--plum);padding-block:28px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;font-size:.8rem;color:rgba(243,235,225,.55)}
 footer b{font-family:var(--display);font-weight:500;font-size:1.1rem;color:var(--gold-hi);letter-spacing:.15em;text-transform:uppercase}
@@ -204,7 +197,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
     <div class="story">
       <p class="drop">Conta o mito que Midas recebeu o poder de transformar em ouro tudo aquilo que tocasse. No início, parecia a realização perfeita. Tudo virava riqueza. Até que o ouro começou a afetar aquilo que realmente importava. A comida, a bebida e o que mais amava.</p>
       <p>E aquilo que parecia um presente começou a revelar seu verdadeiro preço. E se o seu “ouro” também estiver escondendo alguma coisa? Há pessoas que conquistam e continuam sentindo falta. Há pessoas que ganham dinheiro, mas não conseguem sustentá-lo.</p>
-      <p>É aqui que começa A Chave do Êxito</p>
+      <p>É aqui que começa A Chave do Êxito.</p>
     </div>
   </div>
 </section>
@@ -287,7 +280,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
       <article class="host duda">
         <h3>Duda</h3>
         <span class="eyebrow">Maria Eduarda Lopes · Terapeuta e mentora</span>
-        <p>Terapeuta, graduanda em Psicologia e formada em Constelação Familiar, com uma trajetória de mais de 5 anos dedicada ao estudo do comportamento humano, espiritualidade, autoconhecimento e desenvolvimento pessoal. Ao longo dessa caminhada, foram mais de 30 formações em diferentes abordagens terapêuticas unindo diferentes campos do conhecimento para compreender aquilo que permanece no invisível: os padrões, crenças, emoções e escolhas que influenciam a forma como uma pessoa se relaciona consigo mesma, com os outros e com a própria vida.</p>
+        <p>Terapeuta, graduanda em Psicologia e formada em Constelação Familiar, com uma trajetória de mais de 5 anos dedicada ao estudo do comportamento humano, espiritualidade, autoconhecimento e desenvolvimento pessoal. Ao longo dessa caminhada, foram mais de 30 formações em diferentes abordagens terapêuticas, unindo diferentes campos do conhecimento para compreender aquilo que permanece no invisível: os padrões, crenças, emoções e escolhas que influenciam a forma como uma pessoa se relaciona consigo mesma, com os outros e com a própria vida.</p>
       </article>
       <article class="host bia">
         <h3>Bia</h3>
@@ -302,7 +295,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
   <div class="wrap info-grid">
     <div class="info-item"><span class="eyebrow">Quando</span><strong>Sábado, 12\12</strong><span>Das 9h às 19h</span></div>
     <div class="info-item"><span class="eyebrow">Onde</span><strong>Rua Domingos José de Almeida, 77</strong><span>Rio Branco, Porto Alegre – RS</span><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Domingos+Jos%C3%A9+de+Almeida%2C+77%2C+Rio+Branco%2C+Porto+Alegre+RS">Ver no mapa</a></div>
-    <div class="info-item"><span class="eyebrow">Inclui</span><strong>Almoço, prática e vivência sistêmica</strong><span>Vagas limitadas pela capacidade da sala</span></div>
+    <div class="info-item"><span class="eyebrow">Inclui</span><strong>Almoço e coffee break</strong><span>Palestras, práticas e sala sensorial. Vagas limitadas.</span></div>
   </div>
 </section>
 
@@ -358,7 +351,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
   if (quote) split(quote);
 
   const items = [...document.querySelectorAll(
-    '.midas .eyebrow,.story>p,.sec-head>:not(h2),.moment>:not(h3),.pillars button,.manifesto .rule,.manifesto p,.host,.info-item,.cta .wrap>:not(h2)'
+    '.story>p,.sec-head>:not(h2),.moment>:not(h3),.pillars button,.manifesto .rule,.manifesto p,.host,.info-item,.cta .wrap>:not(h2)'
   )];
   const moments = [...document.querySelectorAll('.moment')];
   items.forEach((el) => {
@@ -433,10 +426,12 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
     }
   }
   addEventListener('scroll', request, { passive: true });
-  addEventListener('resize', measure);
+  let mt = 0;
+  const later = () => { clearTimeout(mt); mt = setTimeout(measure, 150); }; // agrupa remedições seguidas
+  addEventListener('resize', later);
   addEventListener('load', measure);
   if (document.fonts) document.fonts.ready.then(measure);
-  if (window.ResizeObserver) new ResizeObserver(() => measure()).observe(document.body);
+  if (window.ResizeObserver) new ResizeObserver(later).observe(document.body);
   measure();
   frame();
 })();
@@ -543,7 +538,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
       <div class="seam"></div>
       <div class="flykey">${document.querySelector('.key img').outerHTML}</div>
       <div class="plate"><svg viewBox="0 0 40 40"><path d="M20 6a7 7 0 0 0-3.6 13L13 34h14l-3.4-15A7 7 0 0 0 20 6z" fill="#1A0809"/></svg></div>
-      <div class="msg">O link de inscrição chega em breve.</div>`;
+      <div class="msg">O link de inscrição chega em breve.</div>`; // só aparece se CHECKOUT_URL ficar vazio
     document.body.appendChild(portal);
 
     const $ = (s) => portal.querySelector(s);
@@ -795,10 +790,12 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
       guide.style.opacity = narrow ? lerp(1, lerp(0.55, 1, e), t) : 1;
     };
     addEventListener('scroll', req, { passive: true });
-    addEventListener('resize', measureG);
+    let gt = 0;
+    const laterG = () => { clearTimeout(gt); gt = setTimeout(measureG, 150); };
+    addEventListener('resize', laterG);
     addEventListener('load', measureG);
     if (document.fonts) document.fonts.ready.then(measureG);
-    if (window.ResizeObserver) new ResizeObserver(() => measureG()).observe(document.body);
+    if (window.ResizeObserver) new ResizeObserver(laterG).observe(document.body);
     new MutationObserver(req).observe(document.body, { childList: true });
     measureG();
     place();
@@ -810,14 +807,11 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
   canvas.setAttribute('aria-hidden', 'true');
   document.body.appendChild(canvas);
   const ctx = canvas.getContext('2d');
-  let dpr = 1;
+  const dpr = 1;
   const size = () => {
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.width = innerWidth * dpr;
-    canvas.height = innerHeight * dpr;
+    if (canvas.width !== innerWidth) canvas.width = innerWidth;
+    if (canvas.height !== innerHeight) canvas.height = innerHeight;
   };
-  size();
-  addEventListener('resize', size);
   const colors = ['255,243,204', '233,210,156', '201,163,94', '176,130,56'];
   const parts = [];
   let raf = 0, lastX = null, lastY = null;
@@ -831,7 +825,7 @@ footer .dev:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
         c: colors[(Math.random() * colors.length) | 0], tw: Math.random() * 6,
       });
     }
-    if (!raf) { last = performance.now(); raf = requestAnimationFrame(draw); }
+    if (!raf) { size(); last = performance.now(); raf = requestAnimationFrame(draw); }
   };
   let last = 0;
   function draw(now) {
